@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+  <title>Divine Touch | PIU</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+
+  </script>
+
+  <script>
+    function submitReview() {
+      const name = document.getElementById('reviewerName').value.trim();
+      const text = document.getElementById('reviewText').value.trim();
+
+      if (name && text) {
+        const reviewList = document.getElementById('review-list');
+
+        const newReview = document.createElement('div');
+        newReview.className = 'review';
+        newReview.innerHTML = `<h4>${name}</h4><p>${text}</p>`;
+
+        reviewList.prepend(newReview); // Show latest review at top
+
+        // Clear inputs
+        document.getElementById('reviewerName').value = '';
+        document.getElementById('reviewText').value = '';
+      } else {
+        alert("Don't be shy! Write your name and review first 💬");
+      }
+    }
+  </script>
+
+
+
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="/">
+        <img src="divine.png" alt="Divine Touch Logo" />
+      </a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#services">Services</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+
+      </ul>
+    </nav>
+    <div class="socials">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+    </div>
+  </header>
+
+<div class="hero-container">
+  <div class="hero-text">
+    <h1>Hi! I'm PIU</h1>
+    <p> <strong>Your Professional Makeup Artist</strong></p>
+
+  </div>
+  <img src="piu.png" class="hero-image" alt="Hero Image">
+</div>
+
+
+
+
+  <section class="about-section" id="about">
+
+
+    <div class="about-container">
+      <div class="about-images">
+        <img src="img1 (3).jpg" alt="Makeup Look 3" />
+        <img src="img1 (4).jpg" alt="Makeup Look 4" />
+      </div>
+      <div class="about-text">
+        <p>
+          Hi, I’m <strong>Piu Basu</strong> — a professional makeup artist with a passion for enhancing natural beauty
+          and making people feel their absolute best. <br><br>
+          Whether it’s a bold bridal glam, a soft party look, a fashion-forward editorial shoot, or a subtle everyday
+          glow — I do it all with love and precision. <br><br>
+          I take the time to understand your features, your style, and your vibe, so that every look I create feels
+          uniquely you. <br><br>
+          With top-quality products and a calm, friendly approach, I make sure you not only look stunning but feel
+          confident and comfortable throughout the process. <br><br>
+          Let’s create some magic together ✨
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="services-section">
+    <div class="services-label">SERVICES</div>
+
+    <div class="service-card">
+      <div class="service-image">
+        <img src="bridal.jpg" alt="Bridal Makeup">
+      </div>
+
+      <div class="service-content">
+        <h2>Bridal Makeup</h2>
+
+        <p>
+          Your big day deserves nothing less than perfection. Our Bridal Makeup service is designed to make you look
+          breathtaking while still feeling completely like yourself. Whether you're going for a timeless traditional
+          look or something soft and modern, we tailor every detail to match your personal style, outfit, and vibe.
+        </p>
+        <p>
+          Using premium, long-lasting products and techniques that withstand happy tears, endless hugs, and late-night
+          dancing — we ensure you stay flawless from the first photo to the final farewell.
+        </p>
+        <p>
+          ✨ Because on your wedding day, you don’t just wear makeup — you wear memories.
+        </p>
+        <div class="price-tag">
+          <span>4000/<strong>ONLY</strong></span><br>
+          <small>waterproof-5000/only</small>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <section id="services" class="services-section2">
+    <div class="services-label">SERVICES</div>
+
+    <div class="service-card">
+      <div class="service-image">
+        <img src="Party_Makeup_Looks.webp" alt="Bridal Makeup">
+      </div>
+
+      <div class="service-content">
+        <h2>Party Makeup</h2>
+        <p>
+          Look your best, feel your best.
+
+          Whether it’s a family celebration, a wedding function, or a girls’ night out — our Party Makeup service
+          ensures you glow with grace and confidence. We believe makeup should enhance your beauty, not mask it. That’s
+          why we carefully tailor each look to suit your skin tone, outfit, and occasion vibe.
+
+          Let us take care of everything – from the shimmer on your lids to the perfect pleats of your saree.
+        </p>
+        <p>
+          💄 Packages Available:
+          Makeup + Saree Draping – ₹600 ONLY
+          A quick glam-up with flawless base, eye detailing, and elegant saree draping.
+
+          Makeup + Saree Draping + Hair – ₹700 ONLY
+          Full-face glam + saree drape + basic hair styling (curls, braid, or bun) to complete the look.
+
+          Waterproof Makeup + Saree Draping + Hair – ₹1000 ONLY
+          Sweat-proof, tear-proof, and dance-all-night approved! Long-lasting glam with complete styling.
+
+
+        </p>
+        <p>
+          ✨ Because beauty isn’t just seen – it’s felt.
+        </p>
+        <div class="price-tag">
+          <span>Full Package 1200/<strong>ONLY</strong></span><br>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="auto-compare-section">
+    <h2 class="section-title">Before & After</h2>
+    <div class="compare-row">
+      <!-- Compare 1 -->
+      <div class="compare-wrapper">
+        <img src="bef1.jpg" class="img before" alt="Before Image">
+        <img src="af1.jpg" class="img after" alt="After Image">
+      </div>
+
+      <!-- Compare 2 -->
+      <div class="compare-wrapper">
+        <img src="bef2.jpg" class="img before" alt="Before Image">
+        <img src="af2.jpg" class="img after" alt="After Image">
+      </div>
+
+      <!-- Compare 3 -->
+      <div class="compare-wrapper">
+        <img src="bef3.jpg" class="img before" alt="Before Image">
+        <img src="aft3.jpg" class="img after" alt="After Image">
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="reviews" style="padding: 40px; background: linear-gradient(to right, #c5a4af, #d49caf);">
+    <h2 style="text-align: center;">Client Reviews 💕</h2>
+
+    <!-- 🎭 Fake Glam Reviews -->
+    <div class="review-box">
+      <p><strong>Priya Sharma</strong></p>
+      <p>"She turned my wedding look into a fairy tale. Absolutely stunning work!"</p>
+    </div>
+    <div class="review-box">
+      <p><strong>Riya Dutta</strong></p>
+      <p>"Best makeup artist in town! My pre-wedding shoot was magical because of her."</p>
+    </div>
+    <div class="review-box">
+      <p><strong>Ananya Bose</strong></p>
+      <p>"Booked last minute for my party and she still nailed it flawlessly!"</p>
+    </div>
+
+    <!-- 🎤 Real Client Review Form -->
+    <form id="review-form" style="max-width: 500px; margin: 40px auto;">
+      <input type="text" id="review-name" placeholder="Your Name" required
+        style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+      <textarea id="review-text" placeholder="Write your review..." required
+        style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea>
+      <button type="button" onclick="submitReview()"
+        style="background-color: #e91e63; color: white; padding: 12px 20px; border: none; cursor: pointer; width: 100%;">Submit
+        Review</button>
+    </form>
+
+    <!-- 🌟 Live Temporary Reviews Appear Here -->
+    <div id="live-reviews" style="margin-top: 20px;"></div>
+  </section>
+
+
+
+
+  <!-- Contact Section -->
+
+  <section id="contact" style="background-color: #a17e87; padding: 40px;">
+    <h2 style="text-align:center;">Contact Me</h2>
+    <form id="contact-form" style="max-width: 500px; margin: auto;">
+      <input type="text" id="name" placeholder="Your Name" required
+        style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+      <input type="text" id="service" placeholder="Occasion type" required
+        style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+      <input type="text" id="date" placeholder="Ocassion date and time" required
+        style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+      <textarea id="message" placeholder="Your Message"
+        style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea>
+      <button type="button" onclick="sendWhatsApp()"
+        style="background-color: #e75480; color: white; padding: 12px 20px; border: none; cursor: pointer; width: 100%;">Send
+        via WhatsApp</button>
+    </form>
+  </section>
+
+
+
+  <script>
+    function sendWhatsApp() {
+      const name = document.getElementById("name").value.trim();
+      const service = document.getElementById("service").value.trim();
+      const date = document.getElementById("date").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !service || !date) {
+        alert("Please fill out all required fields.");
+        return;
+      }
+
+      const fullMessage = `Hello! I'm ${name}. I want to book: ${service} on ${date}. Message: ${message}`;
+      const encodedMessage = encodeURIComponent(fullMessage);
+
+      // WhatsApp number: +91 7439212659 (India code 91)
+      const whatsappURL = `https://wa.me/917439212659?text=${encodedMessage}`;
+
+      window.open(whatsappURL, "_blank");
+    }
+  </script>
+
+
+
+  <script>
+    function submitReview() {
+      const name = document.getElementById("review-name").value.trim();
+      const text = document.getElementById("review-text").value.trim();
+
+      if (!name || !text) {
+        alert("Please fill out both fields.");
+        return;
+      }
+
+      // Add review to site temporarily
+      const reviewDiv = document.createElement("div");
+      reviewDiv.className = "review-box";
+      reviewDiv.innerHTML = `<p><strong>${name}</strong></p><p>${text}</p>`;
+      document.getElementById("live-reviews").appendChild(reviewDiv);
+
+      // Disappear it quietly after 2 minutes
+      setTimeout(() => {
+        reviewDiv.classList.add("fade-out");
+        setTimeout(() => reviewDiv.remove(), 1000);
+      }, 120000); // 2 mins
+
+      // Send to WhatsApp (silently)
+      const fullMsg = `New Review Submitted 👩‍🎤:\n\nName: ${name}\nReview: ${text}`;
+      const encoded = encodeURIComponent(fullMsg);
+      const waURL = `https://wa.me/917439212659?text=${encoded}`;
+      window.open(waURL, "_blank");
+
+      // Reset form
+      document.getElementById("review-form").reset();
+    }
+  </script>
+
+  <footer class="makeup-footer">
+    <div class="footer-content">
+      <h2>Glam. Glow. Go.</h2>
+      <p>Designed & Developed with 💖 by <strong>Aurgho Basu</strong></p>
+      <p>&copy; 2025 All rights reserved | Divine Touch By Piu</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
+
+
+
+</body>
+
+</html>
